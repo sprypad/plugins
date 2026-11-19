@@ -21,6 +21,11 @@ the listed one.
 Open **Settings ▸ Plugins ▸ Browse plugins…**, press **Install** on a plugin, read what it can do, and confirm. A plugin runs inside Spry, so install only plugins you trust. A plugin
 marked **Not reviewed yet** has not been looked at by the project; **Reviewed** means someone has read its code at that version.
 
+## Licence
+
+This repository — the list tooling, the documentation and the Spry importers plugin — is under the [MIT licence](LICENSE), copyright Spry. A plugin from someone else keeps its own licence: unless its folder says otherwise
+(a `LICENSE.txt` or `LICENSE.md` in it), it is offered under the same MIT licence.
+
 ## Making a plugin
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Plugins are plain JavaScript; Spry's own guide to writing one is `docs/plugins.md` in the Spry repository, and `plugins/spry-importers/` is a complete example
