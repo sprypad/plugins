@@ -1,7 +1,7 @@
 {
   "id": "spry-importers",
   "title": "Spry importers",
-  "description": "Brings kinds of file Spry does not open by itself into your notes as notes. For now: EPUB books, with their chapters in order, headings, emphasis, lists, tables, links and pictures.",
+  "description": "Brings kinds of file Spry does not open by itself into your notes as notes: EPUB books, OpenDocument text (.odt), Rich Text (.rtf), web pages (.html), a Notion export (.zip) and Bear notes (TextPack). Install it once and you have them all.",
   "version": "1.0",
   "api": 0,
   "page": "index.js",
@@ -9,7 +9,15 @@
     "files.import"
   ],
   "handles": [
-    ".epub"
+    ".epub",
+    ".odt",
+    ".ott",
+    ".rtf",
+    ".html",
+    ".htm",
+    ".zip",
+    ".textpack",
+    ".textbundle"
   ],
   "kinds": [
     "importer"
