@@ -1,0 +1,15 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: The list and the packages are what building the plugins makes
+        run: python build.py --check

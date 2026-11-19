@@ -1,0 +1,16 @@
+{
+  "id": "epub-importer",
+  "title": "EPUB books",
+  "description": "Brings an EPUB book into your notes as a note: its chapters in order, with headings, emphasis, lists, tables, links and pictures.",
+  "version": "1.0",
+  "api": 0,
+  "page": "index.js",
+  "permissions": [
+    "files.import"
+  ],
+  "author": "The Spry project",
+  "homepage": "https://github.com/sprypad/plugins/tree/main/plugins/epub-importer",
+  "kinds": [
+    "importer"
+  ]
+}
