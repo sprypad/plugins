@@ -55,6 +55,8 @@ def problems_of(folder: Path) -> list[str]:
     for key in ("title", "description", "version"):
         if not str(manifest.get(key) or "").strip():
             found.append(f"{key} is needed")
+    if len(str(manifest.get("description") or "")) > 1200:
+        found.append("description is over 1200 characters")
     if manifest.get("api", API) != API:
         found.append(f"api must be {API}")
     page = str(manifest.get("page") or "")

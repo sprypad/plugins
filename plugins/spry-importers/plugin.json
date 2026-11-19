@@ -1,8 +1,8 @@
 {
   "id": "spry-importers",
   "title": "Spry importers",
-  "description": "Brings kinds of file Spry does not open by itself into your notes as notes: EPUB books, OpenDocument text (.odt), Rich Text (.rtf), web pages (.html), a Notion export (.zip) and Bear notes (TextPack). Install it once and you have them all.",
-  "version": "1.0",
+  "description": "Import unsupported file types directly into Spry as native notes. With a single install, you can bring in:\n\n• EPUB books (.epub)\n• OpenDocument text (.odt)\n• Rich Text (.rtf)\n• Web pages (.html)\n• Notion exports (.zip)\n• Bear notes (TextPack)\n\nWhat it does:\n\n• Converts files to notes: Turns your selected documents and archives into native Spry notes.\n• Respects your privacy: Only accesses the exact files you choose to import, processing everything inside an isolated background worker.",
+  "version": "1.0.1",
   "api": 0,
   "page": "index.js",
   "permissions": [
@@ -22,6 +22,6 @@
   "kinds": [
     "importer"
   ],
-  "author": "The Spry project",
+  "author": "Spry",
   "homepage": "https://github.com/sprypad/plugins/tree/main/plugins/spry-importers"
 }
