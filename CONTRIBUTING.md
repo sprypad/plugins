@@ -9,7 +9,7 @@
    `permissions` must name everything of the person's that the plugin reads (`note.read`, `notes.read`, `note.write`, `speech`, `files.import`, `network`). Name only what it uses.
 3. **Write `index.js`** — one JavaScript file (an ES module, 2 MB at most; bundle it if it grows). Only these kinds of file may be in the folder: `.json .js .md .txt .png .jpg .svg`.
    No Python, no links, at most 30 files.
-4. **Put a `README.md` and a licence** in the folder so people know what it does and may use it.
+4. **Put a `README.md` in the folder**, so people know what it does. The plugin is offered under this repository's [MIT licence](LICENSE) unless the folder says otherwise: if you want a different licence, add a `LICENSE.txt` (or `LICENSE.md`) to the folder and name it in the README. (A plugin folder may only hold `.json .js .md .txt .png .jpg .svg` files, so a licence file needs one of those endings.) By opening a pull request you say that you may offer the plugin under the licence it states.
 5. **Run `python build.py`** and commit what it writes (`packages/…` and `index.json`). `python build.py --check` is what the pull request checks run.
 6. **Open a pull request.** A change to an existing plugin must raise its `version`.
 
