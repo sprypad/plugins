@@ -63,6 +63,9 @@ def problems_of(folder: Path) -> list[str]:
     for name in manifest.get("permissions") or []:
         if name not in PERMISSIONS:
             found.append(f"unknown permission {name!r}")
+    for name in manifest.get("handles") or []:
+        if not (isinstance(name, str) and re.fullmatch(r"\.[a-z0-9]{1,10}", name)):
+            found.append(f"handles must be extensions like .epub, not {name!r}")
     files = [p for p in folder.rglob("*") if p.is_file() and not any(part.startswith(".") for part in p.relative_to(folder).parts)]
     if len(files) > MAX_FILES:
         found.append(f"{len(files)} files; the limit is {MAX_FILES}")
@@ -101,6 +104,7 @@ def build(root: Path = ROOT) -> tuple[dict, dict[str, bytes], list[str]]:
             "author": str(manifest.get("author") or ""), "homepage": str(manifest.get("homepage") or ""),
             "download": f"packages/{name}", "sha256": hashlib.sha256(data).hexdigest(), "size": len(data), "api": manifest.get("api", API),
             "needs": list(manifest.get("needs") or []), "permissions": permissions, "kinds": list(manifest.get("kinds") or []),
+            "extensions": [e for e in (manifest.get("handles") or []) if isinstance(e, str)],
             "review": "reviewed" if str(manifest["version"]) in (reviewed.get(manifest["id"]) or []) else "unreviewed",
         })
     return {"version": 1, "plugins": entries}, packages, problems

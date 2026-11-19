@@ -2,15 +2,15 @@
   "version": 1,
   "plugins": [
     {
-      "id": "epub-importer",
-      "title": "EPUB books",
-      "description": "Brings an EPUB book into your notes as a note: its chapters in order, with headings, emphasis, lists, tables, links and pictures.",
+      "id": "spry-importers",
+      "title": "Spry importers",
+      "description": "Brings kinds of file Spry does not open by itself into your notes as notes. For now: EPUB books, with their chapters in order, headings, emphasis, lists, tables, links and pictures.",
       "version": "1.0",
       "author": "The Spry project",
-      "homepage": "https://github.com/sprypad/plugins/tree/main/plugins/epub-importer",
-      "download": "packages/epub-importer-1.0.tnp",
-      "sha256": "8713a98fd456efb42a6b888e2238070244585a6b577de3d2bf07d8172019f6dc",
-      "size": 5383,
+      "homepage": "https://github.com/sprypad/plugins/tree/main/plugins/spry-importers",
+      "download": "packages/spry-importers-1.0.tnp",
+      "sha256": "35ec78a1a2af8f82506f54486ab6c10ed1f6c35680f0fade9fc8b6954a131087",
+      "size": 5680,
       "api": 0,
       "needs": [],
       "permissions": [
@@ -18,6 +18,9 @@
       ],
       "kinds": [
         "importer"
+      ],
+      "extensions": [
+        ".epub"
       ],
       "review": "unreviewed"
     }

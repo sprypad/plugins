@@ -23,5 +23,5 @@ marked **Not reviewed yet** has not been looked at by the project; **Reviewed** 
 
 ## Making a plugin
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Plugins are plain JavaScript; Spry's own guide to writing one is `docs/plugins.md` in the Spry repository, and `plugins/epub-importer/` is a complete example
-(an *importer*: it turns EPUB books into notes).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Plugins are plain JavaScript; Spry's own guide to writing one is `docs/plugins.md` in the Spry repository, and `plugins/spry-importers/` is a complete example
+(the importer pack: it turns EPUB books into notes).

@@ -1,0 +1,19 @@
+{
+  "id": "spry-importers",
+  "title": "Spry importers",
+  "description": "Brings kinds of file Spry does not open by itself into your notes as notes. For now: EPUB books, with their chapters in order, headings, emphasis, lists, tables, links and pictures.",
+  "version": "1.0",
+  "api": 0,
+  "page": "index.js",
+  "permissions": [
+    "files.import"
+  ],
+  "handles": [
+    ".epub"
+  ],
+  "kinds": [
+    "importer"
+  ],
+  "author": "The Spry project",
+  "homepage": "https://github.com/sprypad/plugins/tree/main/plugins/spry-importers"
+}
